@@ -1,0 +1,15 @@
+body{
+    margin: 0px; padding: 0px;
+    font-size: 10pt;
+}
+
+#footer {
+    display: flex; flex-direction: row;
+    background: #47516c;
+    color: white;
+    padding: 1em 10% 1em 10%;
+}
+#footer .col{
+    flex-grow: 1;
+
+}
