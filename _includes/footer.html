@@ -1,13 +1,31 @@
 
 
 <div id="footer">
-    <div class="col">
-        <div>{{ site.title }}</div>
-        <div>August-Bebel-Str. 4b</div>
-        <div>61184 Karben</div>
+    <div class="row">
+        <div class="col">
+            <div>{{ site.title }}</div>
+            <div>{{ site.address.street }} {{ site.address.number }}</div>
+            <div>{{ site.address.PLZ }} {{ site.address.city }}</div>
+            <div>{{ site.address.country }}</div>
+        </div>
+        <div class="col">
+            <div>Tel.: +49 (0)6039 939 2211</div>
+            <div>Fax.: +49 (0)6039 939 2213</div>
+            <div>Email: {{ site.email }}</div>
+        </div>
+        <div class="col">
+            <div>Amtsgericht: Hamburg</div>
+            <div>Handelsregister: HRB 125055</div>
+            <div>Ust-IdNr.: DE285888775</div>
+        </div>
     </div>
-    <div class="col">
-        Tel.: +49 (0)6039 939 2211
+    <div class="copyright">
+        © Copyright Alle Rechte vorbehalten. Text, Bilder, Grafiken sowie deren
+        Anordnung auf der Webseite von {{ site.title }} unterliegen dem Schutz
+        des Urheberrechts und anderer Schutzgesetze. Der Inhalt dieser Websites
+        darf nicht zu kommerziellen Zwecken kopiert, verbreitet, verändert oder
+        Dritten zugänglich gemacht werden. Einige Seiten enthalten außerdem
+        Bilder, die dem Copyright Dritter unterliegen.
     </div>
 </div>
 

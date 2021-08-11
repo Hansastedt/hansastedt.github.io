@@ -1,15 +1,21 @@
 body{
     margin: 0px; padding: 0px;
     font-size: 10pt;
+    font-family: serif;
 }
 
-#footer {
+#footer .row {
     display: flex; flex-direction: row;
     background: #47516c;
     color: white;
-    padding: 1em 10% 1em 10%;
+    padding: 2em 10% 2em 10%;
 }
 #footer .col{
     flex-grow: 1;
+}
 
+#footer .copyright{
+    padding: 2em 10% 2em 10%;
+    font-size: 9pt;
+    color: #888;
 }
