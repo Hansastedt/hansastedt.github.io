@@ -4,6 +4,29 @@ body{
     font-family: serif;
 }
 
+#header {
+    padding: 2em 10% 0 10%;
+}
+
+#header .logo{
+    background-image: url(/images/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 500px;
+    height: 100px;
+    text-align: right;
+}
+#header .logo h1{
+    font-size: 40px;
+    line-height: 72px;
+    margin: 0;
+}
+#header .logo h2{
+    font-size: 18pt;
+    line-height: 28px;
+    margin: 0;
+}
+
 #footer .row {
     display: flex; flex-direction: row;
     background: #47516c;
