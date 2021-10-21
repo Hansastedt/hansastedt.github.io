@@ -29,7 +29,7 @@ body{
 
 #footer .row {
     display: flex; flex-direction: row;
-    background: #47516c;
+    background: #008080;
     color: white;
     padding: 2em 10% 2em 10%;
 }

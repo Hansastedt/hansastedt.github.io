@@ -3,10 +3,16 @@ email: vertriebnord@hansastedt.de
 address:
     street: August-Bebel-Str.
     number: 4
-    plz: 61184
+    PLZ: 61184
     city: Karben
     country: Germany
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+
+navbar-pages:
+    - page: index.html
+      de: Startseite
+    - page: about-us.html
+      de: Über uns
