@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
 body{
     margin: 0px; padding: 0px;
     font-size: 10pt;
-    font-family: serif;
+    font-family: 'Ubuntu' sans-serif;
 }
 
 #header {
@@ -29,7 +32,8 @@ body{
 
 #footer .row {
     display: flex; flex-direction: row;
-    background: #008080;
+/*    background: #008080;*/
+    background: #00a8b0;
     color: white;
     padding: 2em 10% 2em 10%;
 }

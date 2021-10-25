@@ -11,6 +11,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 
+collections:
+    - showcases
+
 navbar-pages:
     - page: index.html
       de: Startseite
