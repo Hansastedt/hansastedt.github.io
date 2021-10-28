@@ -1,3 +1,7 @@
+---
+---
+@import 'themes';
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 
@@ -8,11 +12,12 @@ body{
 }
 
 #header {
-    padding: 2em 10% 0 10%;
+    padding: 2em 10% 3em 10%;
+    background-color: $theme-color;
 }
 
 #header .logo{
-    background-image: url(/images/logo.jpg);
+    background-image: url(/images/logo.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 500px;
@@ -33,7 +38,7 @@ body{
 #footer .row {
     display: flex; flex-direction: row;
 /*    background: #008080;*/
-    background: #00a8b0;
+    background: $theme-color;
     color: white;
     padding: 2em 10% 2em 10%;
 }
