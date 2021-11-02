@@ -1,8 +1,26 @@
 ---
 ---
+
 @import 'themes';
+@import 'bootstrap/bootstrap';
+
+
+
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: $primary !important;
+    color: white;
+}
+
+
 
 
 body{
@@ -13,7 +31,7 @@ body{
 
 #header {
     padding: 0em 12% 3em 12%;
-    background-color: $theme-color;
+    background-color: $primary;
     display: flex;
     flex-direction: row;
 }
@@ -59,7 +77,7 @@ body{
 #footer .row {
     display: flex; flex-direction: row;
 /*    background: #008080;*/
-    background: $theme-color;
+    background: $primary;
     color: white;
     padding: 2em 10% 2em 10%;
 }
