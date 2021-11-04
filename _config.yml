@@ -12,11 +12,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 collections:
-    - showcases
-    - posts
-
-navbar-pages:
-    - page: index.html
-      de: Startseite
-    - page: about-us.html
-      de: Über uns
+    showcases:
+        output: true
+    pages:
+        output: true
