@@ -17,9 +17,9 @@
     </div>
 
     <div class="navbar">
-        {% for navbar_page in site["navbar-pages"] %}
+        {% for singlepage in site.pages %}
         <span class="">
-          <a class="navbar-link {% if navbar_page.page == page.page %}active{% endif %}" href="/{{ navbar_page.page }}">{{ navbar_page.de }}</a>
+          <a class="navbar-link {% if singlepage.page == page.page %}active{% endif %}" href="{{ singlepage.url }}">{{ singlepage.title }}</a>
         </span>
         {% endfor %}
     </div>
