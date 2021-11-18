@@ -1,0 +1,39 @@
+{% include header.html %}
+
+<div id="document" class="container">
+
+
+{% for post in site.posts %}
+{% if post.categories contains page.matching_category %}
+<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+    <div class="card">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <h5 class="card-title">
+                    <a
+                        class="post-title"
+                        href="{{ post.url }}"
+                        target="_blank"
+                    >{{ post.title }}</a>
+                </h5>
+                <h6 class="card-subtitle text-muted">
+                    {{ post.publisher }}
+                    <span style="float:right">{{ post.date | date: "%Y-%m-%d" }}</span>
+                </h6>
+            </li>
+            {% if post.cover %}
+            <img src="/data/coverimages/{{ post.cover }}" class="card-img-top" alt="{{ post.title }}">
+            {% endif %}
+            <li class="list-group-item">{{ post.content | strip_html | truncate: 500 }}</li>
+        </ul>
+
+    </div>
+</div>
+
+{% endif %}
+{% endfor %}
+
+
+</div>
+
+{% include footer.html %}

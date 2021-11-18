@@ -17,10 +17,9 @@
     </div>
 
     <div class="navbar">
+        <a class="navbar-link {% if 'index.html' == page.page %}active{% endif %}" href="/index.html">Home</a>
         {% for singlepage in site.pages %}
-        <span class="">
-          <a class="navbar-link {% if singlepage.page == page.page %}active{% endif %}" href="{{ singlepage.url }}">{{ singlepage.title }}</a>
-        </span>
+        <a class="navbar-link {% if singlepage.page == page.page %}active{% endif %}" href="{{ singlepage.url }}">{{ singlepage.title }}</a>
         {% endfor %}
     </div>
 
