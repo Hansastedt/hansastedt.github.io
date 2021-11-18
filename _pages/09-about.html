@@ -1,0 +1,11 @@
+---
+layout: page
+title: "Über uns"
+---
+
+{% for post in site.posts %}
+    {% if post.categories contains "about" %}
+        {{ post.content }}
+        {% break %}
+    {% endif %}
+{% endfor %}
